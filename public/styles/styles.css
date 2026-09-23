@@ -1,14 +1,14 @@
 /* Literata font */
 @font-face {
     font-family: 'Literata';
-    src: url('./fonts/Literata.ttf');
+    src: url('../fonts/Literata.ttf');
     font-weight: 200 900;
     font-style: normal;
 }
 /* Literata font (italic variant) */
 @font-face {
     font-family: 'Literata';
-    src: url('./fonts/Literata-Italic.ttf');
+    src: url('../fonts/Literata-Italic.ttf');
     font-weight: 200 900;
     font-style: italic;
 }
