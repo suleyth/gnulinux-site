@@ -1,0 +1,244 @@
+/* Literata font */
+@font-face {
+    font-family: 'Literata';
+    src: url('./fonts/Literata.ttf');
+    font-weight: 200 900;
+    font-style: normal;
+}
+/* Literata font (italic variant) */
+@font-face {
+    font-family: 'Literata';
+    src: url('./fonts/Literata-Italic.ttf');
+    font-weight: 200 900;
+    font-style: italic;
+}
+
+/* Define all of the colors of the site in a central place. */
+/* https://www.w3schools.com/css/css3_variables.asp */
+:root {
+    --bg-color0: #5e4c30;
+    --bg-color1: #926947;
+    --border: #000000;
+    --content-bg: #ffffffe7;
+    --link-color: #af8864;
+    --link-color-hover: #d4a67b;
+
+    --border-size: 2px;
+    --border-radius: 10px;
+}
+
+/* Global styles */
+* {
+    /* Handle all margins and paddings manually instead of whatever the browser has set to default */
+    margin: 0;
+    padding: 0;
+    /* All text in the site uses the same font */
+    font-family: 'Literata';
+}
+
+body {
+    /* Scrolling background gradient */
+    background: linear-gradient( 45deg, var(--bg-color1) 25%, transparent 25%, transparent 75%, var(--bg-color1) 75%, var(--bg-color1)), 
+                linear-gradient(-45deg, var(--bg-color1) 25%, transparent 25%, transparent 75%, var(--bg-color1) 75%, var(--bg-color1)) repeat;
+    background-color: var(--bg-color0);
+    background-size: 100px 100px;
+    animation: scroll 20s linear infinite;
+}
+/* The background animation just moves the gradient 500 pixels in the X and Y directions. This just offsets infinitely.*/
+@keyframes scroll {
+    to { background-position: -500px -500px }
+}
+
+header {
+    width: 90%;
+    height: 225px;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: var(--content-bg);
+    border: var(--border-size) solid var(--border);
+    border-radius: var(--border-radius);
+    padding: 10px;
+    margin-top: 20px;
+
+    /* Background image */
+    background-color: white;
+    background-image: url('../images/background.jpg');
+    background-repeat: space repeat;
+    background-size: 200px;
+}
+
+header a {
+    text-decoration: none;
+}
+
+#header-text {
+    font-size: 4rem;
+    font-weight: bolder;
+    color: black;
+    text-align: center;
+    -webkit-text-stroke: 2px white;
+    text-shadow: 2px 3px 3px black;
+}
+
+.left-img {
+    float: left;
+    padding-right: 8px;
+}
+.right-img {
+    float: right;
+    padding-left: 8px;
+}
+
+main {
+    margin-top: 20px;
+    width: 85%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    align-items: flex-start;
+}
+
+aside {
+    width: 25%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+
+    background-color: var(--content-bg);
+    border: var(--border-size) solid var(--border);
+    border-radius: var(--border-radius);
+}
+
+/* Nav */
+nav ul {
+    margin: 0;
+    padding: 0;
+}
+
+nav ul a {
+    font-size: x-large;
+    margin: 0;
+    padding: 0;
+}
+
+nav ul li {
+    list-style: none;
+    color: var(--link-color);
+    margin: 0;
+    padding-left: 4px;
+    padding-right: 4px;
+    border-bottom: 1px solid black;
+}
+
+nav ul li:hover {
+    font-size: x-large;
+    color: black;
+    background-color: var(--link-color-hover);
+}
+
+nav ul a:hover {
+    color: black;
+}
+
+article {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+
+    background-color: var(--content-bg);
+    border: var(--border-size) solid var(--border);
+    border-radius: var(--border-radius);
+    
+    text-align: justify;
+}
+
+footer {
+    margin-top: 20px;
+    width: 90%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 10px;
+    
+    background-color: var(--content-bg);
+    border: var(--border-size) solid var(--border);
+    border-bottom: var(--border-size) solid white;
+    border-top-left-radius: var(--border-radius);
+    border-top-right-radius: var(--border-radius);
+}
+
+footer p {
+    font-size: large;
+    font-style: italic;
+    text-align: center;
+}
+
+/* Headings */
+h1 {
+    font-size: 2.5rem;
+}
+h2 {
+    font-size: 2rem;
+}
+h3 {
+    font-size: 1.5rem;
+}
+h4 {
+    font-size: 1.25rem;
+}
+hr {
+    margin-bottom: 10px;
+}
+
+/* Text */
+p {
+    margin-bottom: 10px;
+}
+a {
+    font-weight: bold;
+    color: var(--link-color);
+}
+/* No hover effect for the header's anchor */
+main a:hover {
+    color: var(--link-color-hover);
+}
+
+/* Lists */
+ul, ol {
+    margin-left: 2em;
+    margin-bottom: 10px;
+}
+ul, ol li {
+    margin-bottom: 2px;
+}
+/* No margin for nested lists */
+ul ul {
+    margin-bottom: 0px;
+}
+ol ol {
+    margin-bottom: 0px;
+}
+
+/* Tables */
+table {
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1em;
+}
+
+/* Form */
+form {
+    border: 1px solid black;
+    padding: 5px;
+}
+label {
+    float: left;
+    margin-right: 10px;
+}
+input {
+    margin-bottom: 4px;
+}
+input[type="submit"] {
+    display: block;
+}
