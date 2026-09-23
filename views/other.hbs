@@ -1,0 +1,55 @@
+<article>
+    <h1 id="top">Other stuff</h1>
+    <hr>
+
+    <section class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#map">Map</a></li>
+            <li><a href="#youtube-video">YouTube Video</a></li>
+            <li><a href="#contact-form">Contact form</a></li>
+        </ul>
+    </section>
+
+    <h2 id="map">Map</h2>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d15877.737486067044!2d24.93985937506937!3d60.16886066817204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x46920a2a2fe9d929%3A0x3e38eb919fa64762!2sUniversity%20of%20Helsinki!5e0!3m2!1sen!2sie!4v1773763458426!5m2!1sen!2sie" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    <p>The University of Helsinki is the place where <a href="https://www.cs.helsinki.fi/u/kutvonen/index_files/Linus.Torvalds/">Linus Torvalds</a>, creator of Linux, started working on his project, at the time merely a hobby that wouldn't be <em>"big and professional like GNU"</em>.</p>
+
+    <h2 id="youtube-video">YouTube Video</h2>
+    <iframe width="560" height="315" src="https://www.youtube.com/embed/E0Q9KnYSVLc?si=ziYjCuJLsaSWep63" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    <p>A good video that goes into the history of creating the Linux kernel.</p>
+
+    <h2 id="contact-form">Contact form</h2>
+    <form action="http://example.com" method="get">
+        <label for="first_name">First name:<span style="color:red;">*</span></label>
+        <input type="text" name="first_name" id="first_name" autofocus required>
+        <br>
+        <label for="last_name">Last name:<span style="color:red;">*</span></label>
+        <input type="text" name="last_name" id="last_name" required>
+        <br>
+        <label for="email">Email:<span style="color:red;">*</span></label>
+        <input type="email" name="email" id="email" required placeholder="johndoe@example.com">
+        <br>
+        <label for="gender">Gender:</label>
+        <input type="radio" id="gender-male" name="gender" value="male"> Male
+        <input type="radio" id="gender-female" name="gender" value="female"> Female
+        <input type="radio" id="gender" name="gender" value="other"> Other
+        <br>
+        <label for="heard1">Heard of Linux at:</label>
+        <fieldset>
+            <input type="checkbox" name="friend" value="friend" id="heard1"> A friend <br>
+            <input type="checkbox" name="forums" value="forums" id="heard2"> Forums <br>
+            <input type="checkbox" name="youtube" value="youtube" id="heard3"> YouTube <br>
+            <input type="checkbox" name="reddit" value="reddit" id="heard4"> Reddit <br>
+            <input type="checkbox" name="dontsay" value="dontsay" id="heard5"> Prefer not to say <br>
+        </fieldset>
+        <br>
+        <label for="message">Query:</label>
+        <textarea name="message" id="message" cols="40" rows="6" data-maxlength="200" placeholder="Your message must be less than 200 characters"></textarea>
+        <input type="submit" name="submit" id="button" value="Submit">
+        <input type="reset" name="reset" id="reset" value="Reset">
+    </form>
+    <p>A <span style="color:red;">*</span> indicates a required field.</p>
+
+    <a href="#top">Back to top...</a>
+</article>

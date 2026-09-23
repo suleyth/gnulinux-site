@@ -42,6 +42,22 @@ app.get('/', (req, res) => {
   console.log('home')
 });
 
+// desktop environment list route
+app.get('/de-list', (req, res) => {
+  state={de_list: true}
+  head={title:"List of Desktop Environments"}
+  res.render('de-list', {state, head});
+  console.log('de-list')
+});
+
+// distro route
+app.get('/distro-list', (req, res) => {
+  state={distro_list: true}
+  head={title:"List of Distributions"}
+  res.render('distro-list', {state, head});
+  console.log('distro-list')
+});
+
 // getting started route
 app.get('/getting-started', (req, res) => {
   state={getting_started: true}
@@ -50,7 +66,21 @@ app.get('/getting-started', (req, res) => {
   console.log('getting-started')
 });
 
+// other route
+app.get('/other', (req, res) => {
+  state={other: true}
+  head={title:"Other"}
+  res.render('other', {state, head});
+  console.log('other')
+});
 
+// why route
+app.get('/why', (req, res) => {
+  state={why: true}
+  head={title:"Why use GNU/Linux?"}
+  res.render('why', {state, head});
+  console.log('why')
+});
 
 
 // Start the server

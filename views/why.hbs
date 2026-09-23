@@ -1,0 +1,163 @@
+<article>
+    <h1 id="top">Why use GNU/Linux?</h1>
+    <hr>
+
+    <section class="toc">
+        <h2>Table of Contents</h2>
+        <ul>
+            <li><a href="#what-is-gnu-linux">What is GNU/Linux?</a></li>
+            <li><a href="#why-use-it">Why use it?</a></li>
+            <li>
+                <a href="#okay-but-how-is-actually-using-gnu-linux">Okay but how is actually <em>using</em> GNU/Linux?</a>
+                <ul>
+                    <li><a href="#advantages-and-cool-things">Advantages and cool things</a></li>
+                    <li><a href="#common-pain-points">Common pain points</a></li>
+                    <li><a href="#pain-points-that-are-myths">Pain points that are myths</a></li>
+                </ul>
+            </li>
+            <li><a href="#i-want-to-try-out-gnu-linux">I want to try out GNU/Linux!</a></li>
+        </ul>
+    </section>
+
+    <p>This is a page hoping to incentivize you to try out GNU/Linux! But why should you do that? You're perfectly comfortable with MacOS or Windows, why should you take the risk and plunge yourself into the unknown?</p>
+    <p>Well, I'm just going to be straight forward. It's your computer. You decide how you use it! You don't really have an obligation to go through the hassle of switching to a completely different operating system purely because some people on the internet are begging you to. You don't need to excuse or justify yourself to anyone. So none of what I'm about to say is an imposition, because if you try to use GNU/Linux feeling forced to, you're not going to have a good time using it.</p>
+    <p>HOWEVER! Despite that! With gaming on GNU/Linux being basically fully viable right now thanks to Valve's efforts, I believe the average computer user doesn't really have anything that BINDS them to Windows or Mac other than convention and convenience. If you are not tied to those operating systems due to incompatible software (for example if you <em>NEED</em> Adobe products, <em>NEED</em> Visual Studio, <em>NEED</em> Autodesk products, etc) then you only stand to gain!</p>
+    <p>If you use Windows, you have nothing to lose. Backup your files, and if all goes wrong, you can just reinstall. Your Windows license is stored in the motherboard of your computer, you wont have to buy it again. In that sense, by trying out GNU/Linux you only stay the same as before or get better if you find it suits you. If you use Mac... it's a little more complicated.</p>
+    <p>But okay, first off... what am I even talking about?</p>
+
+    <h2 id="what-is-gnu-linux">What is GNU/Linux?</h2>
+    <hr>
+    <p>GNU/Linux is not an operating system really. Rather it's a collection of building blocks for one that can be made to work together to <em>then</em> make one. These building blocks are many and can be chosen at will to create a functional operating system. A collection of all these building blocks packaged as an operating system you can actually install is called a GNU/Linux Distribution, or Distro for short.</p>
+    <p>This is the main difference between GNU/Linux and Ubuntu, or Fedora, or Debian, Red Hat, whatever you may have heard before! </p>
+    <p>Typically a GNU/Linux Distribution is comprised of:</p>
+    <ul>
+        <li>Branding of the distribution itself</li>
+        <li>The Linux kernel, which is the core of the OS - what talks between the physical parts of your computer and the programs it runs</li>
+        <li>An init system, which is the first program that runs when the operating system boots, it initializes all programs and hardware in your computer</li>
+        <li>
+            The GNU tools, which include the core programs needed for an OS to function. These include but aren't limited to:
+            <ul>
+                <li>A compiler. A program that turns the code of programs into the binary your computer can run, the C library which is a collection of tools and building blocks to make programs</li>
+                <li>A C library. A collection of tools and building blocks in code that programs can use to do actually useful things</li>
+                <li>A shell. If the kernel talks between hardware and software, the shell talks between kernel and user, basically.</li>
+                <li>A bunch of other essential programs that every computer needs</li>
+            </ul>
+        </li>
+        <li>A Desktop Environment or DE, which is the actual user interface with your windows and taskbars and icons and menus and all that.</li>
+    </ul>
+    <p>All of these components are <b>open source</b>, or <b>libre</b>, terms that refer to software that is developed in the open, with anyone (including you!) being able to inspect their source code, how they work, how they are developed and by who. For regular users, this means that they are most of the time very open to changes and suggestions and bug reports, and that you can use them for any purpose, they will never place a restriction on what you can use the software for. For developers, this means they can inspect how the program works, distribute it to anyone you wish, modify it to suit your own goals, and even distribute your modifications.</p>
+    <p>This creates a chain-link of developers helping one another and improving on their craft, sharing what they know to help others without copyright and patents getting in the way.</p>
+
+    <h2 id="why-use-it">Why use it?</h2>
+    <hr>
+    <p>Unlike Windows, MacOS, UNIX, Android etc, GNU/Linux is not an operating system made by a company and sold for profit. GNU/Linux is free, and will forever be free. It is not ran by a bunch of bureaucrats looking to squeeze money out of you in the form of dollars or data, who care only about their investors and not really about you. The core of GNU/Linux is community run and administered by a non-profit foundation who only cares about furthering the goals of the project in a sustainable way.</p>
+    <p>This isn't just an ethical benefit. This way of working with software systematically prevents you from being screwed over. If you use Windows and Microsoft decides to redesign 40% of the UI, changing all the button places to ruin your muscle memory, making the look of the OS even more inconsistent, you have to bear it. If they decide they want to track every single thing you do and sell it to advertising companies you have to bear it. If they decide you can only use the OS by having a Microsoft account and telling them even more about you, you have to bear it. If they decide an important application can only be obtained and used if you get it through the Microsoft Store, you have to bear it. Should I go on?... Sure you can avoid the update, until you no longer get security support and you have to update anyway. It is the same deal with MacOS.</p>
+    <p>There is a typical process a piece of technology goes through when it's driven by profit:</p>
+    <ol>
+        <li>First, companies try to carve a space for themselves by seeking users through good will.</li>
+        <li>Then, companies care more about their investors, so they burn that good will and things that benefit the users.</li>
+        <li>Then, companies care more about themselves, so they burn even what benefit the investors. Now the technology <em>only</em> benefits the company and it's terrible for everyone else.</li>
+    </ol>
+    <p>GNU/Linux is completely immune to this process. There are no investors to please, and most things are built directly by the community, who only benefit if what they do also benefits others (sometimes not just ethically since a lot of the projects that sustain GNU/Linux are ran purely out of donations). But even if a part of the operating system starts screwing over users, behaving in an anti-consumer way, you will always have an alternative. You will always have a way of swapping and removing the parts you dislike.</p>
+    <p>To give you an example with the Microsoft problems I gave before:</p>
+    <ul>
+        <li>
+            There are actually tons of different UIs you can pick in GNU/Linux. You can even pick between ways the UI actually functions underneath! This means you have more chances of finding an UI that is fully compatible with you. And if the community or even company making it decides to ruin your workflow, you will always be able to switch over. Sometimes, there will even be a version of exactly the UI you like, simply ran by a different set of developers that did keep the things you like or removed the things you don't like.
+        </li>
+        <li>
+            Telemetry in GNU/Linux is always opt-in, as in it does nothing by default and you have to willingly enable it if you want to help the developers. GNU/Linux users usually have an extremely hardline stance on privacy and do not tolerate any abuses about this. Even companies know this, and so far all of them have failed to have mandatory or even just opt-out telemetry in their distros. (For transparency's sake, Fedora is trying right now, but it has to pass a community vote.)
+        </li>
+        <li>
+            No accounts. There is no vendor lock-in in GNU/Linux. Once again, anything, down to the very core of the kernel itself, that you dislike, you can change. It's not always easy or exactly as you wish, but you can and are guaranteed to always be able to avoid bullshit in some way.
+        </li>
+    </ul>
+    <p>GNU/Linux is an operating system that treats you, the user, with respect. Like a person that needs to use a computer. It doesn't treat you like a customer, like something to be milked, like a nuisance, it fully treats you like an adult. It will never get in your way, not even if you want to destroy it. Most of what it has is built purely out of love, and not out of greed. There are exceptions, but you will always have a way to circumvent and curtail those if they get too nasty.</p>
+    <p>This is the core of why GNU/Linux is so special. It's not the only operating system that follows this philosophy; the BSD operating systems function in a similar way. However, GNU/Linux is systematically guaranteed to always remain this way, thanks to the license it has on most of its core software. It's also a lot more popular and used, which means higher compatibility with both software and hardware, as well as a much easier experience finding answers to problems and questions.</p>
+
+    <h2 id="okay-but-how-is-actually-using-gnu-linux">Okay but how is actually <em>using</em> GNU/Linux?</h2>
+    <hr>
+    <p>What I just talked about is basically an elevator pitch. But because GNU/Linux operating systems are so varied and different between each other, this is a question that can't really have a very general, straight forward answer.</p>
+    <p>It's important to know first hand, it's nothing like Windows or MacOS. Things wont behave in the same way, the same principles wont apply, you can't expect anything to. MacOS is a lot more similar, but if you come from Windows, you will be jumping to an entirely different operating system, with absolutely nothing in common. In some aspects it's better, in some worse, in some it's really just different.</p>
+
+    <h3 id="advantages-and-cool-things">Advantages and cool things</h3>
+    <ul>
+        <li>
+            You are in full control of updates. You decide when to update, what to update, and you even, by picking the distribution, decide how often updates will be available. You can even decide the server you get the updates from, so that they are downloaded as fast possible.
+        </li>
+        <li>
+            In general you <em>very rarely</em> have to reboot for anything, including updates and installing programs.
+        </li>
+        <li>
+            Installing programs is a breeze. You just search for the program in the store and install it. There is no looking for a website, avoiding fakes, downloading the latest version of the installer, choosing the location, clicking next over and over, rebooting, etc.
+        </li>
+        <li>
+            There are Distributions and Desktop Environments made specifically for old and slow computers, that have very low minimum requirements and can speed up and revive old computers. Some people still use computers from 2007 and run modern Linux in them with no issues!
+        </li>
+        <li>
+            In general GNU/Linux is very stable. You can keep it running for months and years and it never suddenly crashes for no reason, besides power output or hardware failure. Every part of the system is repairable up to what makes it boot, so a lot of disasters can be fixed and you still keep all your files.
+        </li>
+        <li>
+            In privacy and transparency, GNU/Linux is king. If you want, you can be <em>completely</em> aware of every single thing your computer is currently doing, up to the tasks the kernel is doing! You can even step into the code for the OS itself and debug it! All telemetry in GNU/Linux is optional. It's way less worse than Windows, since it's actually used for improving the programs rather than just selling data to advertisers, but even then you can just disable it.
+        </li>
+        <li>
+            Thanks to the open source and libre nature of GNU/Linux, you can be dead certain that your computer is not doing anything to you you don't want it to. All the lines of code are public for everyone to see and contribute to. This means that for most software on it, you don't have to trust anyone, you can verify yourself that it's not spying on you or mining crypto on the background or anything of the sort.
+        </li>
+        <li>
+            Portability! GNU/Linux's open and lightweight design makes it very easy to port your system between computers. Your user files can be in a different partition than the system files, making it very easy to switch between distributions at will without impacting your files. You can even run it on an USB stick!
+        </li>
+        <li>
+            GNU/Linux is generally faster. You get security updates more quickly, you see bugs being fixed more quickly. Because of the open nature of the code (anyone can see it and anyone can contribute), user pain points are typically fixed way faster than for closed systems that can only be modified by the company that provides them. This also applies to security issues and vulnerabilities.
+        </li>
+        <li>
+            Malware is almost a non issue! People who write viruses and trojans never target GNU/Linux mainly because of its small user base. You'll basically never find yourself installing something that mines crypto on the background or that slows down your PC massively, much less anything that encrypts your files or deletes them!
+        </li>
+        <li>
+            Lastly, you generally have to pay nothing for functionality. Most software for GNU/Linux makes its money purely off of donations or selling technical support. Things like cloud storage, an office suite, editing and drawing programs, it almost always is completely free for you to use. You can even benefit from free GNU/Linux sofware on Windows! It is very probable that you can replace your Microsoft Office workflow with a LibreOffice one, your OneDrive/iCloud storage with Nextcloud, etc.
+        </li>
+    </ul>
+
+    <h3 id="common-pain-points">Common pain points</h3>
+    <p>I've talked about the main advantages, but GNU/Linux is far from perfect. There are pain points and issues! Some are true, some are myths or are not true <em>anymore</em>. I'll try to talk about the most common.</p>
+    <ul>
+        <li>Your experience changing <em>will</em> be painful at first if you do anything complicated with your computer. Both because of having to adapt to a completely different system, and also in case you do something that only has second-class support for GNU/Linux. You will have to lookup a lot and ask. This is innevitable really. There are distributions that aim to make it as easy and hassle free as possible, which do reduce very significantly the potential for issues, but there will be a few head scratching sessions when you start.</li>
+        <li>If you have hardware that is not that well supported, primarily old NVIDIA GPUs, there will be issues ranging from minor annoyances to stuff that makes using GNU/Linux unviable. This is just the cold truth. Sadly there's not much you or even GNU/Linux can do about this, all I can advice is for you to research about your PC parts and see how well they work.</li>
+        <li>Drivers might also be an issue. For example, a lot of graphic tablet drivers don't exist on Linux or are outdated. There is a community ran project <a href="https://github.com/OpenTabletDriver/OpenTabletDriver">for alternative ones</a>, however they still lack some things, mainly wheel support. Audio interfaces can vary, some have perfect support some don't work at all. VR headsets are mostly supported but only in certain Desktop Environments. In general a big disadvantage of GNU/Linux is that you have to lookup and research about what you buy to make sure it's compatible.</li>
+        <li>There aren't really much &quot;I just turned it on without changing anything and it suddenly doesn't work anymore&quot; kind of errors in GNU/Linux, but because it easily lets you mess with your computer, even essential core files, when starting it's normal for you to try to change something the unofficial way (i.e editing a config file instead of using the UI) and find things glitching out. It can usually always be fixed, but it's a big pain.</li>
+        <li>It can often happen that &quot;the latest thing&quot; usually has really cool features, but it also usually has a couple of really annoying issues that can ruin it, forcing you to not use it or to use the old and reliable thing but without the shiny new features.</li>
+        <li>If you do obscure things with your computer, you'll find yourself saying &quot;Well maybe in a year or two (when the developers finish this)/(when this gets updated)...&quot; often</li>
+        <li>You'll notice this entire section I keep saying &quot;usually&quot; and &quot;often&quot; and &quot;maybe&quot; etc. Once again GNU/Linux is not exactly an operating system, but the pieces to make one. The distributions are the operating systems. So a lot of issues vary by distribution, by hardware, by what you will actually do with them, etc. It's hard to really estimate how much issues you'll have or not. You'll just have to try it out!</li>
+    </ul>
+
+    <h3 id="pain-points-that-are-myths">Pain points that are myths</h3>
+    <p>There are a few things that are widespread sayings about GNU/Linux's painpoints, but that are myths because they're wrong or they're just outdated information.</p>
+    <p>(Do remind me if there are any more myths I should dispell here!)</p>
+
+    <h4>&quot;You'll run into cryptic errors everytime you have to do anything!&quot;</h4>
+    <p>In general, the most common uses of a computer have been developed and polished to great amount now. Depending on the distribution you'll only really run into cryptic errors if you try to do something complicated or if you have driver issues. The core experience of using a computer will generally be very stable.</p>
+    <p>But also, keep in mind, a lot of GNU/Linux issues are fixed easily! They are heavily documented, and often times you remove the issue by editing a line in a file or executing a command in the terminal.</p>
+    <p>When you have an issue on Windows it's generally much harder to solve. The tutorials to fix it are a bunch of useless SEO farming websites that only give generic solutions and advertise terrible programs. Even the Microsoft support forums rarely give an useful answer beyond &quot;run <code>sfc /scannow</code> in the terminal and if it doesn't work reinstall Windows&quot;, at least in my experience.</p>
+
+    <h4>&quot;You need to use weird terminal commands for everything!&quot;</h4>
+    <p>Most GNU/Linux tutorials do suffer from this, rather than guide you through the UI they will give you cryptic terminal commands you have to paste in a black box that may do what you want. Some may be malicious though, and a terminal command can screw your entire computer and delete all your files if you're not careful.</p>
+    <p>This is because of the inherent decentralized nature of GNU/Linux: there are multiple UIs to guide you through, used by a wide margin of users. Rather than write steps for all those UIs they just show you a command you can paste in and it universally solves the problem regardless of distribution or Desktop Environment.</p>
+    <p>While this does mean what I said before, that problems in GNU/Linux are usually solved very easily, it can be confusing and weird, and if you want to be safe you'll have to learn at least a little about how commands work and what they do to make sure you don't fall for some malicious tutorial that actually makes you ruin the entire OS. Or refuse to follow terminal based tutorials and try to figure your way out through the UI of your Desktop Environment.</p>
+    <p>This is a myth because it's very often possible to solve common problems with the UI, it's just that most places on the internet will give you terminal commands. Whether you want to deal with this or not is your choice.</p>
+
+    <h4>&quot;It can't run any games!&quot;</h4>
+    <p>This used to be true, and gaming on Linux was in general a huge pain besides emulators. Nowadays thanks to Proton, Valve's technology for running Windows games on GNU/Linux, it's actually quite seamless for a HUGE amount of games. You'd genuinely be surprised how many games work great on GNU/Linux! Have a look on <a href="http://protondb.com/">ProtonDB</a> and see if your favorite games run.</p>
+    <p>There are two gaming related things that absolutely do NOT work on GNU/Linux:</p>
+    <ul>
+        <li>Some MMOs and online-only games like Destiny 2 and Valorant, since they run kernel-level anti cheat that bans you if you use GNU/Linux</li>
+        <li>Piracy, since videogame cracks are 99% made for Windows</li>
+    </ul>
+    <p>Once again, research!</p>
+
+    <h4>&quot;It has no serious support for anything!&quot;</h4>
+    <p>This is a myth for general users. GNU/Linux has been developed for 40 years and in some cases has even more hardware support than Windows. However, once again, it really varies on what you're trying to do with your computer, so for your use case it may definitely not have the support it needs to. You'll have to research.</p>
+
+    <h2 id="i-want-to-try-out-gnu-linux">I want to try out GNU/Linux!</h2>
+    <hr>
+    <p>That my friend is what <a href="./getting-started">this</a> post is for!</p>
+
+    <a href="#top">Back to top...</a>
+</article>
