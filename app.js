@@ -32,7 +32,6 @@ app.use(express.static('public'));
 
 // home page or home route
 app.get('/', (req, res) => {
-
   // set active for navigation
   state={home:true}
   // set specifics for <head>
@@ -41,32 +40,18 @@ app.get('/', (req, res) => {
   res.render('index', {state, head});
   // send this to terminal where node app is running
   console.log('home')
-
 });
 
-// contact route
-app.get('/contact', (req, res) => {
-    state={contact : true}
-    head={title:"Contact - Week 1"}
-    res.render('contact', { state, head});
-    console.log('contact')
-  });
+// getting started route
+app.get('/getting-started', (req, res) => {
+  state={getting_started: true}
+  head={title:"Getting started"}
+  res.render('getting-started', {state, head});
+  console.log('getting-started')
+});
 
-  // newpage route
-app.get('/newpage', (req, res) => {
-    state={newpage : true}
-    head={title:"New Page - Week 1"}
-    res.render('newpage', { state, head});
-    console.log('newpage')
-  });
 
-  // newpage route
-app.get('/aboutme', (req, res) => {
-    state={aboutme : true}
-    head={title:"About Me - Week 1"}
-    res.render('aboutme', { state, head});
-    console.log('aboutme')
-  });
+
 
 // Start the server
 app.listen(3000, () => {
